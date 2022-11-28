@@ -15,7 +15,7 @@ switch($segments[0]){
  case  "news":
    require 'user/news.php';
     break;
- case  "adminPanel":
+ case  "admin":
     require 'adminPanel/addNews.php';
     break;
   }
