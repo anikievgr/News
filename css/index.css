@@ -1,6 +1,9 @@
 header h1 {
   text-align: center;
 }
+body {
+  color: black;
+}
 .news {
   margin: 0 auto;
   background-color: #e5e5e5;
@@ -66,7 +69,4 @@ header h1 {
   top: 50%;
   height: 50%;
   transform: translate(-50%, -50%);
-}
-.choice a {
-  text-decoration: none;
 }

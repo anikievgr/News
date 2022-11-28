@@ -16,11 +16,13 @@ foreach($news as $news){
             <?
             foreach($newsList as $newList){
                 ?>
-                <li>
+                <li >
+                <a href="news/search/<?=$newList[0]?>" style="color: black;   text-decoration: none; display:block;">
                     <p><?= $newList[1]?></p>
                     <p><?=$newList[4]?></p>
                     <p><?= $newList[2]?></p>
                     <div class="gradient"></div>
+                    </a>
                 </li>
               <?
             }
