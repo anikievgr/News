@@ -7,17 +7,17 @@ $segments = explode('/', trim($uri, '/'));
 echo"<pre>";
 var_dump($segments);
 echo"</pre>";
-require 'header.php';
-switch($segments[2]){
-  case "":
+include "header.php";
+switch($segments[0]){
+  case "News":
      require 'choice.php';
      break;
  case  "news":
    require 'user/news.php';
     break;
- case  "admin":
+ case  "adminPanel":
     require 'adminPanel/addNews.php';
     break;
   }
-require 'foter.php';
+  include "foter.php";
 ?>

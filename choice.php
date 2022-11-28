@@ -1,3 +1,4 @@
-
- <a href="index.php/news/">news</a>
-  <a href="index.php/admin/">admin</a>
+<div class="choice">
+<a href="/news/">news</a>
+<a href="/a/">admin</a>
+</div>
