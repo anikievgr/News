@@ -18,6 +18,7 @@ foreach($news as $news){
     position: absolute;
   left: 50%; 
   border: 1px solid black;
+
   transform: translate(-50%, 0 );">
   <div class="text" style="display: flex;   justify-content: space-around;">
     <p><?=$NEWS[1]?></p>
