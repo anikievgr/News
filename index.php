@@ -16,7 +16,6 @@ switch($segments[2]){
   if($segments[3] == "" ){
    require 'user/news.php';
    }elseif ($segments[3] == "search") {
-
     require 'user/browseNews.php';
    }
     break;
