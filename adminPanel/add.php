@@ -1,11 +1,11 @@
 <?php
+echo "OK";
 $date = date("Y-m-d");
 var_dump($newstitle);
 $newstitle = $_POST['newsTitle'];
 $newsText = $_POST['newsText'];
 var_dump ($newstitle);
 var_dump ($newsText);
-
 $connect =  mysqli_connect('localhost','root','root','news');
 if(!$connect){
    echo 'erore';

@@ -1,7 +1,4 @@
-
-<body>
-    <div class="rd">asd</div>
- <form class="formAddNews" action="add.php" method="post">
+ <form class="formAddNews" action="../adminPanel/add.php" method="post">
     <input type="text" name="newsTitle">
     <textarea name="newsText" id="" cols="30" rows="10">
         Lorem ipsum dolor sit amet consectetur 
