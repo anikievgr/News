@@ -4,9 +4,7 @@ spl_autoload_register(function($ClassName){
 });
 $uri =  parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $segments = explode('/', trim($uri, '/'));
-// echo"<pre>";
-// var_dump($segments);
-// echo"</pre>";
+
 include "header.php";
 switch($segments[2]){
   case "":
@@ -18,7 +16,7 @@ switch($segments[2]){
     break;
  case  "admin":
     $objA = new OpenAdmin();
-    $objA -> OpenAdminPanel();
+    $objA -> OpenAdminPanel($segments[3]);
     break;
   }
   include "foter.php";

@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
- <div class="color">
+ <div class="color" style=" position: absolute;
+  left: 50%; 
+  top:50%;
+  transform: translate(-50%, -50%);">
     <a href="index.php/news">news</a>
     <a href="index.php/admin">admin</a>
 </div>

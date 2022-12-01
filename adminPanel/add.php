@@ -12,4 +12,5 @@ if(!$connect){
 }
 mysqli_query($connect, "INSERT INTO `newlist` (`id`, `newsTitle`, `newsText`, `newsIMG`, `newsDate`) VALUES (NULL, '$newstitle', '$newsText', NULL, '$date');
 ");
+
 ?>

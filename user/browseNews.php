@@ -3,6 +3,8 @@ $connect =  mysqli_connect('localhost','root','root','news');
 if(!$connect){
    echo 'erore';
 }
+$uri =  parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$segments = explode('/', trim($uri, '/'));
 $news = mysqli_query($connect, "SELECT * FROM `newlist` WHERE id = $segments[4];");
 $news = mysqli_fetch_all($news);
 foreach($news as $news){
