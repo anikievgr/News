@@ -1,7 +1,9 @@
 <?php 
 class OpenAdmin{
-    public function OpenAdminPanel($open){
-        if($open == ""){
+    public $open;
+    function __construct($open)
+    {
+    if($open == ""){
             require 'adminPanel/choiceAdminPanel.php';
         }elseif($open == "add"){
              require "adminPanel/addNews.php";
@@ -11,5 +13,16 @@ class OpenAdmin{
             require 'adminPanel/delete.php';
         }
     }
+    // public function OpenAdminPanel($open){
+    //     if($open == ""){
+    //         require 'adminPanel/choiceAdminPanel.php';
+    //     }elseif($open == "add"){
+    //          require "adminPanel/addNews.php";
+    //     }elseif($open == "delete"){
+    //             require 'adminPanel/deleteNews.php';
+    //     }elseif($open == "deleteNews"){
+    //         require 'adminPanel/delete.php';
+    //     }
+    // }
 }
 ?>

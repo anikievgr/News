@@ -1,11 +1,14 @@
 <?php 
-class OpenNews{
-    public function OpenNewsList($search){
-        if($search == ""){
+class OpenNews {
+    public $employees;
+    function __construct($employees)
+    {
+          if($employees == ""){
         require 'user/news.php';
-        }elseif($search == "search"){
+        }elseif($employees == "search"){
             require 'user/browseNews.php';
         }
     }
+
 }
 ?>
