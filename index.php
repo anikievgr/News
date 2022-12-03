@@ -10,8 +10,6 @@ include "header.php";
    var_dump($segments);
    echo '</pre>';
 $i = 2;
-
-
 foreach ($array as $key => $array) {
          echo"[" .$key."]";
          echo"[" .$segments[$i]."]";
@@ -50,16 +48,16 @@ foreach ($array as $key => $array) {
    
 	// }
 
-switch($segments[2]){
-  case "":
-     require 'input.php';
-     break;
- case  "news":
-    $objN = new OpenNews($segments[3]);
-    break;
- case  "admin":
-    $objA = new OpenAdmin($segments[3]);
-    break;
-  }
+// switch($segments[2]){
+//   case "":
+//      require 'input.php';
+//      break;
+//  case  "news":
+//     $objN = new OpenNews($segments[3]);
+//     break;
+//  case  "admin":
+//     $objA = new OpenAdmin($segments[3]);
+//     break;
+//   }
   include "foter.php";
 ?>

@@ -1,5 +1,8 @@
 <?php 
 $array = [
+    '' =>[
+    'class' =>'OpenStart'
+    ],
     'news' =>[
     'class' =>'OpenNews'
     ],
