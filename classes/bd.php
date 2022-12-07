@@ -33,5 +33,9 @@ class bd
        $this->news = $news;
        }
     }
+    public function update($newstitle, $newsText, $date, $id)
+    {
+        mysqli_query($this->bd, "UPDATE `newlist` SET `newsTitle` = '$newstitle', `newsText` = '$newsText', `newsDate` = '$date' WHERE `newlist`.`id` = '$id';");
+    }
 }
 ?>
