@@ -1,13 +1,9 @@
 <?php
-$connect =  mysqli_connect('localhost','root','root','news');
-if(!$connect){
-   echo 'erore';
-}
-$news = mysqli_query($connect, "SELECT * FROM `newlist`");
-$news = mysqli_fetch_all($news);
-foreach($news as $news){
-  $newsList[] = $news; 
-}
+spl_autoload_register(function($ClassName){
+   require '../classes/'.$ClassName.'.php';
+});
+$bd = new bd;
+$newsList = $bd->itemsBd;
 ?>
 
     <header><h1>NEWS</h1></header>
