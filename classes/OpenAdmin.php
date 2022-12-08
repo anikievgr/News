@@ -3,6 +3,7 @@ class OpenAdmin{
     public $open;
     function __construct($open)
     {
+   
     if($open == ""){
             require 'adminPanel/choiceAdminPanel.php';
         }elseif($open == "add"){
@@ -11,18 +12,12 @@ class OpenAdmin{
                 require 'adminPanel/deleteNews.php';
         }elseif($open == "deleteNews"){
             require 'adminPanel/delete.php';
+        }elseif($open == "uppdate"){
+                require 'adminPanel/uppdateNews.php';
+        }
+        elseif($open == "uppdateNews"){
+                require 'adminPanel/uppdateAdd.php';
         }
     }
-    // public function OpenAdminPanel($open){
-    //     if($open == ""){
-    //         require 'adminPanel/choiceAdminPanel.php';
-    //     }elseif($open == "add"){
-    //          require "adminPanel/addNews.php";
-    //     }elseif($open == "delete"){
-    //             require 'adminPanel/deleteNews.php';
-    //     }elseif($open == "deleteNews"){
-    //         require 'adminPanel/delete.php';
-    //     }
-    // }
 }
 ?>

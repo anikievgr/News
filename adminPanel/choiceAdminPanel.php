@@ -14,6 +14,7 @@
     >
       <a href="admin/delete">Удалить</a>
       <a href="admin/add">Добавить</a>
+         <a href="admin/uppdate">Обнавить</a>
     </div>
   </body>
 </html>

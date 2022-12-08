@@ -15,14 +15,14 @@ $newsList = $bd->itemsBd;
     <link rel="stylesheet" href="../../css/index.css" />
   </head>
   <body>
-<header><h1>Удалить</h1></header>
+<header><h1>Обновить</h1></header>
     <div class="news">
         <ul>
             <?
             foreach($newsList as $newList){
                 ?>
                 <li >
-                <a href="deleteNews/<?=$newList[0]?>" style="color: black;   text-decoration: none; display:block;">
+                <a href="uppdateNews/<?=$newList[0]?>" style="color: black;   text-decoration: none; display:block;">
                     <p><?= $newList[1]?></p>
                     <p><?=$newList[4]?></p>
                     <p><?= $newList[2]?></p>

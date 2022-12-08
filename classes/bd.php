@@ -3,8 +3,10 @@ class bd
 {
     public $bd;
     public $itemsBd;
-    public $news;    
+    public $news;
+  public $id;
  function __construct(){
+    echo $this->id;
    $connect =  mysqli_connect('localhost','root','root','news');
    if(!$connect){
             echo "erore";
