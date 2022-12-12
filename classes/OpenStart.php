@@ -2,9 +2,10 @@
 class OpenStart
 {
         public $open;
-    function __construct($open)
+    function __construct($pattern)
     {
-   require "user/input.php";
+                require('templates/input.php');
+        
 }
      
 

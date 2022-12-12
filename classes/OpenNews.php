@@ -1,7 +1,7 @@
 <?php 
 class OpenNews {
     public $employees;
-    function __construct($employees)
+        function __construct($employees)
     {
           if($employees == ""){
         require 'user/news.php';

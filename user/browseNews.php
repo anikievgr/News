@@ -4,26 +4,5 @@ $segments = explode('/', trim($uri, '/'));
 $bd = new bd;
 $bd->readNews($segments[4]);
 $NEWS = $bd->news;
-// $news = mysqli_query($connect, "SELECT * FROM `newlist` WHERE id = $segments[4];");
-// $news = mysqli_fetch_all($news);
-// foreach($news as $news){
-//    $NEWS = $news;
-// }
-// echo '<pre>';
-//  var_dump( $NEWS);
-// echo '</pre>';
+require("templates/browseNews_pattern.php")
 ?>
-<div class="chek-news" style=" width: 50%;
-  height: auto;
-  background-color: #e5e5e5;
-    position: absolute;
-  left: 50%; 
-  border: 1px solid black;
-
-  transform: translate(-50%, 0 );">
-  <div class="text" style="display: flex;   justify-content: space-around;">
-    <p><?=$NEWS[1]?></p>
-     <p><?=$NEWS[4]?></p>
-     </div>
-      <p><?=$NEWS[2]?></p>
-</div>
