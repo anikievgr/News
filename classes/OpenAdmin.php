@@ -7,7 +7,7 @@ class OpenAdmin{
     if($open == ""){
             require 'adminPanel/choiceAdminPanel.php';
         }elseif($open == "add"){
-             require "templates/add_news_templates.html";
+             require "templates/add_news_templates.php";
         }elseif($open == "delete"){
                 require 'adminPanel/deleteNews.php';
         }elseif($open == "deleteNews"){

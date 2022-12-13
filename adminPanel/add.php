@@ -9,5 +9,4 @@ $newstitle = $_POST['newsTitle'];
 $newsText = $_POST['newsText'];
 $bd = new bd;
 $bd->add($newstitle, $newsText, $date);
-
 ?>
