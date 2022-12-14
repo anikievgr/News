@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../../css/index.css" />
-  </head>
-  <body>
+<?php 
+spl_autoload_register(function($ClassName){
+   require '../classes/'.$ClassName.'.php';
+});
+$inputTemplates = new input_templates;
+ob_start();
+?>
 <header><h1>Удалить</h1></header>
     <div class="news">
         <ul>
@@ -27,6 +24,8 @@
             ?>
         </ul>
     </div>
-    
-</body>
-</html>
+<?php
+$html = ob_get_flush();
+ob_end_clean();
+$inputTemplates->output_html($html);
+?>

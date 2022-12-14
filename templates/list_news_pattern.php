@@ -1,15 +1,10 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/index.css">
-  <title>Document</title>
-</head>
-<body>
-  
+<?php 
+spl_autoload_register(function($ClassName){
+   require '../classes/'.$ClassName.'.php';
+});
+$inputTemplates = new input_templates;
+ob_start();
+?>
 <header><h1>NEWS</h1></header>
 <div class="news">
 <?php
@@ -29,5 +24,8 @@
   </ul>
 </div>
 
-</body>
-</html>
+<?php
+$html = ob_get_flush();
+ob_end_clean();
+$inputTemplates->output_html($html);
+?>

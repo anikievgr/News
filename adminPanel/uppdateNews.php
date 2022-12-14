@@ -4,5 +4,6 @@ spl_autoload_register(function($ClassName){
 });
 $bd = new bd;
 $newsList = $bd->itemsBd;
+// $input_pattern = new input_templates("admin","uppdate");
 require("templates/update_list_templates.php")
 ?>
