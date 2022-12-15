@@ -5,9 +5,9 @@ class OpenNews {
     {
         
           if($employees == ""){
-        require 'user/news.php';
+        require 'backend/user/news.php';
         }elseif($employees == "search"){
-            require 'user/browseNews.php';
+            require 'backend/user/browseNews.php';
         }
     }
 

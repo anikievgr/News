@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Обновить</h1>
-    <form class="formAddNews" action="../../../adminPanel/uppdate.php?id=<?=$segments[4]?>" method="post">
+    <form class="formAddNews" action="../../../backend/adminPanel/uppdate.php?id=<?=$segments[4]?>" method="post">
     <input type="text" name="newsTitle" value="<?=$news[1]?>">
     <textarea name="newsText" id="" cols="30" rows="10">
      <?=$news[2]?>

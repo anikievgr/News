@@ -1,6 +1,6 @@
 <?php
 spl_autoload_register(function($ClassName){
-   require '../classes/'.$ClassName.'.php';
+   require '../../classes/'.$ClassName.'.php';
 });
 echo "OK";
 $date = date("Y-m-d");

@@ -5,18 +5,18 @@ class OpenAdmin{
     {
    
     if($open == ""){
-            require 'adminPanel/choiceAdminPanel.php';
+            require 'backend/adminPanel/choiceAdminPanel.php';
         }elseif($open == "add"){
-             require "templates/add_news_templates.php";
+             require "templates/admin_templates/add_news_pattern.php";
         }elseif($open == "delete"){
-                require 'adminPanel/deleteNews.php';
+                require 'backend/adminPanel/deleteNews.php';
         }elseif($open == "deleteNews"){
-            require 'adminPanel/delete.php';
+            require 'backend/adminPanel/delete.php';
         }elseif($open == "uppdate"){
-                require 'adminPanel/uppdateNews.php';
+                require 'backend/adminPanel/uppdate_list_News.php';
         }
         elseif($open == "uppdateNews"){
-                require 'adminPanel/uppdateAdd.php';
+                require 'backend/adminPanel/uppdate_form.php';
         }
     }
 }

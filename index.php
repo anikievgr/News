@@ -1,5 +1,5 @@
 <?php
-require "array.php";
+require "backend/array.php";
 spl_autoload_register(function($ClassName){
    require 'classes/'.$ClassName.'.php';
 });
